@@ -1,5 +1,8 @@
-1.
+1. Check vm.swappiness on all your nodes
 <code>
 sudo su
-echo "vm.swappiness = 1" >> /etc/sysctl.conf
+#echo 1 > /proc/sys/vm/swappiness
+#echo "vm.swappiness = 1" >> /etc/sysctl.conf
 <code>
+*Screenshot
+![Alt text](/alexpg06/SEBC/labs/images/swapiness.png?raw=true "Swapiness")
