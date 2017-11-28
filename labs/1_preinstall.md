@@ -7,4 +7,4 @@ sudo su
 
 *Screenshot
 
-![Alt text](/alexpg06/SEBC/labs/images/swapiness.png?raw=true "Swapiness")
+![Alt text](/images/swapiness.png?raw=true "Swapiness")
