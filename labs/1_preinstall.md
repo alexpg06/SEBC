@@ -6,5 +6,4 @@ sudo su
 <code>
 
 *Screenshot
-
 ![Alt text](https://github.com/alexpg06/SEBC/blob/master/labs/images/swapiness.png "Swapiness")
