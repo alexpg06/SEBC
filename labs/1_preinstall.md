@@ -4,5 +4,7 @@ sudo su
 #echo 1 > /proc/sys/vm/swappiness
 #echo "vm.swappiness = 1" >> /etc/sysctl.conf
 <code>
+
 *Screenshot
+
 ![Alt text](/alexpg06/SEBC/labs/images/swapiness.png?raw=true "Swapiness")
