@@ -1,11 +1,13 @@
 # Setup
 
 * AWS
-  *Instances
+  Instances
+  <pre class="prettyprint">
   -34.235.120.251		ip-10-1-2-173.ec2.internal
   -35.153.200.10		ip-10-1-2-155.ec2.internal
   -54.82.226.205		ip-10-1-2-240.ec2.internal
   -34.235.146.54		ip-10-1-2-208.ec2.internal
+  </pre>
 
 * Centos 7.4
 * / 50GB
