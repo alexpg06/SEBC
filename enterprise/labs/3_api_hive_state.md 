@@ -1,0 +1,59 @@
+
+Stop Service (HIVE)
+
+[centos@ip-10-1-2-181 ~]$ curl -X POST -u alexpg06:cloudera 'http://localhost:7180/api/v12/clusters/alexpg06/services/hive/commands/stop'
+{
+  "id" : 1086,
+  "name" : "Stop",
+  "startTime" : "2017-11-30T19:13:44.647Z",
+  "active" : true,
+  "serviceRef" : {
+    "clusterName" : "cluster",
+    "serviceName" : "hive"
+  }
+}
+
+
+Start Service (HIVE)
+
+[centos@ip-10-1-2-181 ~]$ curl X POST -u alexpg06:cloudera 'http://localhost:7180/api/v12/clusters/alexpg06/services/hive/commands/start'
+{
+  "id" : 1097,
+  "name" : "Start",
+  "startTime" : "2017-11-30T19:14:18.860Z",
+  "active" : true,
+  "serviceRef" : {
+    "clusterName" : "cluster",
+    "serviceName" : "hive"
+  }
+}
+
+Check Status Service (HIVE)
+
+[centos@ip-10-1-2-181 ~]$ curl -u alexpg06:cloudera 'http://localhost:7180/api/v12/clusters/alexpg06/services/hive'
+{
+  "name" : "hive",
+  "type" : "HIVE",
+  "clusterRef" : {
+    "clusterName" : "cluster"
+  },
+  "serviceUrl" : "http://ip-10-1-2-181.ec2.internal:7180/cmf/serviceRedirect/hive",
+  "roleInstancesUrl" : "http://ip-10-1-2-181.ec2.internal:7180/cmf/serviceRedirect/hive/instances",
+  "serviceState" : "STARTED",
+  "healthSummary" : "GOOD",
+  "healthChecks" : [ {
+    "name" : "HIVE_HIVEMETASTORES_HEALTHY",
+    "summary" : "GOOD",
+    "suppressed" : false
+  }, {
+    "name" : "HIVE_HIVESERVER2S_HEALTHY",
+    "summary" : "GOOD",
+    "suppressed" : false
+  } ],
+  "configStalenessStatus" : "FRESH",
+  "clientConfigStalenessStatus" : "FRESH",
+  "maintenanceMode" : false,
+  "maintenanceOwners" : [ ],
+  "displayName" : "Hive",
+  "entityStatus" : "GOOD_HEALTH"
+}
